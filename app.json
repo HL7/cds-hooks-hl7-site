@@ -1,0 +1,14 @@
+{
+  "name": "cds-hooks-hl7-site",
+  "scripts": {},
+  "env": {},
+  "formation": {
+    "web": {
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    { "url": "heroku/python" } 
+  ]
+}
