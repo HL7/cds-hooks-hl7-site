@@ -13,7 +13,7 @@ The following pages are the official ballot content:
 - [https://cds-hooks.hl7.org/ballots/2018May/specification/1.0/](https://cds-hooks.hl7.org/ballots/2018May/specification/1.0/)
 - [https://cds-hooks.hl7.org/ballots/2018May/hooks/](https://cds-hooks.hl7.org/ballots/2018May/hooks/)
 
-The remainder of the site content is not part of the specification but are supplemental living documentation. We welcome informal feedback on this content.
+The content in the remainder of the site is not part of the specification but is supplemental, living documentation. We welcome informal feedback on this content.
 
 ## Submitting Ballot Comments
 
@@ -25,4 +25,4 @@ If you don't have a GitHub account or don't want to submit your comment as a Git
 
 ## Following Ballot Discussion
 
-All discussion and resolution of ballot comments will be communicated in an open manner via our GitHub issues, in addition to the process required by HL7. Any discussions that occur in an offline forum (HL7 working group meetings, conference calls, etc), will be communicated on our [mailing list](https://groups.google.com/forum/#!forum/cds-hooks) and [Zulip chat](https://chat.fhir.org/) #cds-hooks stream. Summaries of these offline discussions will be posted on each GitHub issue.
+All discussion and resolution of ballot comments will be communicated in an open manner via our GitHub issues, in addition to the process required by HL7. Any discussions that occur in an offline forum (HL7 working group meetings, conference calls, etc), will be communicated on our [mailing list](https://groups.google.com/forum/#!forum/cds-hooks) and [Zulip chat #cds-hooks](https://chat.fhir.org/#narrow/stream/cds-hooks)  stream. Summaries of these offline discussions will be posted on each GitHub issue.
