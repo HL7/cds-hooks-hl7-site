@@ -2,7 +2,7 @@
 
 Thank you for your interest in providing feedback on the CDS Hooks 1.0 specification via the [HL7](https://www.hl7.org) [ballot process](http://www.hl7.org/special/committees/publishing/schedules.cfm)!
 
-CDS Hooks has a vibrant community and we are excited to take CDS Hooks into the next phase by incorporating it as an HL7 project. We look forward to the feedback from the larger HL7 community and we know our specification will be better for it.
+CDS Hooks has a vibrant community and we are excited to take CDS Hooks into the next phase by submitting it as an HL7 Standard for Trial Use (STU). We look forward to the feedback from the larger HL7 community and we know our specification will be better for it.
 
 ## May 2018 Ballot
 
