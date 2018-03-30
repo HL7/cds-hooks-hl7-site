@@ -1,0 +1,8 @@
+# Mac
+*.DS_STORE
+
+# python
+env/
+
+# mkdocs
+site/
