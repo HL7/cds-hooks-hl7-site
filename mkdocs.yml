@@ -10,7 +10,7 @@ extra:
     - type: 'github'
       link: 'https://github.com/cds-hooks'
 
-pages:
+nav:
 - Home: 'index.md'
 
 repo_url: 'https://github.com/cds-hooks/hl7-site'
