@@ -4,6 +4,9 @@ theme:
   name: 'material'
   logo: 'images/logo-square.png'
   favicon: 'images/favicon.png'
+  palette:
+    primary: 'grey'
+    accent: 'red'
 
 extra:
   social:
@@ -18,7 +21,7 @@ nav:
   - Home: 'ballots/index.md'
   - 2018May: 'https://cds-hooks.hl7.org/ballots/2018May'
 
-repo_url: 'https://github.com/cds-hooks/hl7-site'
+repo_url: 'https://github.com/hl7/cds-hooks-hl7-site'
 
 markdown_extensions:
   - admonition
@@ -26,4 +29,4 @@ markdown_extensions:
       guess_lang: false
       linenums: true
 
-copyright: © 2019 HL7 & Boston Children's Hospital.<p /> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+copyright: © 2019 HL7 & Boston Children's Hospital.<p></p> <img alt="HL7 International" src="/images/hl7-logo.png" /><p></p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
