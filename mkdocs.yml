@@ -16,10 +16,10 @@ extra:
 nav:
 - Home: 'index.md'
 - Releases:
-  - 1.0: 'https://cds-hooks.hl7.org/1.0/'
+  - 1.0: '1.0/index.md'
 - Archived Ballots:
   - Home: 'ballots/index.md'
-  - 2018May: 'https://cds-hooks.hl7.org/ballots/2018May'
+  - 2018May: 'ballots/2018May/index.html'
 
 repo_url: 'https://github.com/hl7/cds-hooks-hl7-site'
 

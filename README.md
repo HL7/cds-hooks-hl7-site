@@ -28,6 +28,7 @@ $ pip install -r requirements.txt
 3. Run the site locally
 
 ```sh
+$ ./retrieve-canonical-content.sh
 $ mkdocs serve
 ```
 
@@ -42,6 +43,14 @@ We encourage and welcome any contributions to this project.
 If you want to report an issue or enhancement, please make sure to browse our [existing issues](https://github.com/cds-hooks/hl7-site/issues) before logging new issues.
 
 In support of a healthy and inclusive community, we use and enforce a [code of conduct](./CODE_OF_CONDUCT.md) for all members of our community. Our code of conduct is adapted from the [Contributor Covenant](http://contributor-covenant.org/).
+
+## Adding Release or Ballot Content
+
+1. Update the `.gitignore` file to include the new release/ballot directory
+2. Update the `retrieve-canonical-content.sh` file to retrieve the new release/ballot
+3. Update the `mkdocs.yml` file to include the new release/ballot directory in the `nav:` section
+4. Update the `docs\index.md` file to include information on the release
+5. If this is a ballot addition, update the `docs\ballots\index.md` file to include information on the ballot
 
 ## License
 

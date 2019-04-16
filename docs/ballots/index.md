@@ -2,12 +2,12 @@
 
 ### May 2018 Ballot
 
-The May 2018 ballot period is open from April 6th, 2018 thru May 7th, 2018. You can review the content for the May 2018 ballot at [http://cds-hooks.hl7.org/ballots/2018May](http://cds-hooks.hl7.org/ballots/2018May)
+The May 2018 ballot period is open from April 6th, 2018 thru May 7th, 2018. You can review the content for the May 2018 ballot at [https://cds-hooks.hl7.org/ballots/2018May](2018May)
 
 The following pages are normative track content:
 
-- [http://cds-hooks.hl7.org/ballots/2018May/specification/1.0/](http://cds-hooks.hl7.org/ballots/2018May/specification/1.0/)
-- [http://cds-hooks.hl7.org/ballots/2018May/hooks/](http://cds-hooks.hl7.org/ballots/2018May/hooks/)
+- [https://cds-hooks.hl7.org/ballots/2018May/specification/1.0/](2018May/specification/1.0/)
+- [https://cds-hooks.hl7.org/ballots/2018May/hooks/](2018May/hooks/)
 
 Other pages (such as the Overview, Examples, and Quick Start) are informative content intended to provide supplemental documentation.
 
