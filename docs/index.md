@@ -1,3 +1,6 @@
+<img style="float: left;padding-right: 5px;" src="hl7-logo-header.png" width=90px" />
+
+
 # CDS Hooks
 
 CDS Hooks is an HL7 published specification for clinical decision support.
