@@ -1,4 +1,4 @@
-<img style="float: left;padding-right: 5px;" src="hl7-logo-header.png" width=90px" />
+<img style="float: left;padding-right: 5px;" src="images/hl7-logo.png" width=90px" />
 
 
 # CDS Hooks
