@@ -1,0 +1,1075 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.2">
+    
+    
+      
+        <title>Hooks - CDS Hooks</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#hooks" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="CDS Hooks" class="md-header-nav__button md-logo">
+          
+            <img src="../images/logo-square.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              CDS Hooks
+            </span>
+            <span class="md-header-nav__topic">
+              Hooks
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/cds-hooks/docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="CDS Hooks" class="md-nav__button md-logo">
+      
+        <img src="../images/logo-square.png" width="48" height="48">
+      
+    </a>
+    CDS Hooks
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/cds-hooks/docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Specification
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Specification
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../specification/1.0/" title="1.0" class="md-nav__link">
+      1.0
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Hooks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Hooks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Hooks
+      </label>
+    
+    <a href="./" title="Hooks" class="md-nav__link md-nav__link--active">
+      Hooks
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-context-and-prefetch" title="Hook context and prefetch" class="md-nav__link">
+    Hook context and prefetch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-difference" title="What's the difference?" class="md-nav__link">
+    What's the difference?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefetch-tokens" title="Prefetch tokens" class="md-nav__link">
+    Prefetch tokens
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-definition-format" title="Hook Definition Format" class="md-nav__link">
+    Hook Definition Format
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hook-name-expressed-as-noun-verb" title="hook-name-expressed-as-noun-verb" class="md-nav__link">
+    hook-name-expressed-as-noun-verb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" title="Workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context" title="Context" class="md-nav__link">
+    Context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fhir-resources-in-context" title="FHIR resources in context" class="md-nav__link">
+    FHIR resources in context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes-to-the-definition-of-a-hook-hook-versioning" title="Changes to the Definition of a Hook (Hook Versioning)" class="md-nav__link">
+    Changes to the Definition of a Hook (Hook Versioning)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specification-version" title="Specification Version" class="md-nav__link">
+    Specification Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hook-version" title="Hook Version" class="md-nav__link">
+    Hook Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-log" title="Change Log" class="md-nav__link">
+    Change Log
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="template/" title="new-hook-template" class="md-nav__link">
+      new-hook-template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="patient-view/" title="patient-view" class="md-nav__link">
+      patient-view
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="medication-prescribe/" title="medication-prescribe" class="md-nav__link">
+      medication-prescribe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="order-review/" title="order-review" class="md-nav__link">
+      order-review
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/" title="Quick Start" class="md-nav__link">
+      Quick Start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="Examples" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../community/" title="Community" class="md-nav__link">
+      Community
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-context-and-prefetch" title="Hook context and prefetch" class="md-nav__link">
+    Hook context and prefetch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-difference" title="What's the difference?" class="md-nav__link">
+    What's the difference?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefetch-tokens" title="Prefetch tokens" class="md-nav__link">
+    Prefetch tokens
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-definition-format" title="Hook Definition Format" class="md-nav__link">
+    Hook Definition Format
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hook-name-expressed-as-noun-verb" title="hook-name-expressed-as-noun-verb" class="md-nav__link">
+    hook-name-expressed-as-noun-verb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" title="Workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context" title="Context" class="md-nav__link">
+    Context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fhir-resources-in-context" title="FHIR resources in context" class="md-nav__link">
+    FHIR resources in context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes-to-the-definition-of-a-hook-hook-versioning" title="Changes to the Definition of a Hook (Hook Versioning)" class="md-nav__link">
+    Changes to the Definition of a Hook (Hook Versioning)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specification-version" title="Specification Version" class="md-nav__link">
+    Specification Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hook-version" title="Hook Version" class="md-nav__link">
+    Hook Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-log" title="Change Log" class="md-nav__link">
+    Change Log
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/cds-hooks/docs/edit/master/docs/hooks/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="hooks">Hooks<a class="headerlink" href="#hooks" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>As a specification, CDS Hooks does not prescribe a default or required set of hooks for implementers. Rather, the set of hooks defined here are merely a set of common use cases that were used to aid in the creation of CDS Hooks. The set of hooks defined here are not a closed set; anyone is able to define new hooks to fit their use cases.</p>
+<p>New hooks should be added to the CDS <a href="https://github.com/cds-hooks/docs/wiki/Proposed-Hooks">proposed hooks Wiki page</a> according to the format described below. A <a href="template">template</a> hook definition is included as a starting point for new hooks.</p>
+<p>Note that each hook (e.g. <code>medication-prescribe</code>) represents something the user is doing in the EHR and multiple CDS Services might respond to the same hook (e.g. a "price check" service and a "prior authorization" service might both respond to <code>medication-prescribe</code>).</p>
+<h2 id="hook-context-and-prefetch">Hook context and prefetch<a class="headerlink" href="#hook-context-and-prefetch" title="Permanent link">&para;</a></h2>
+<h3 id="whats-the-difference">What's the difference?<a class="headerlink" href="#whats-the-difference" title="Permanent link">&para;</a></h3>
+<p>A discrete user workflow or action within the EHR often naturally includes a set of contextual data. This context can contain both required and optional data and is specific to a hook. Additionally, the context data is relevant to most CDS Services subscribing to the hook.</p>
+<p>When the context data relates to a FHIR data type, it is important not to conflate context and prefetch. For instance, imagine a hook for opening a patient's chart. This hook should include the FHIR identifier of the patient whose chart is being opened, not the full patient FHIR resource. In this case, the FHIR identifier of the patient is appropriate as CDS Services may not be interested in details about the patient resource but instead other data related to this patient. Or, a CDS Service may only need the full patient resource in certain scenarios. Therefore, including the full patient resource in context would be unnecessary. For CDS Services that want the full patient resource, they can request it to be prefetched or fetch it as needed from the FHIR server.</p>
+<p>Consider another hook for when a new patient is being registered. In this case, it would likely be appropriate for the context to contain the full FHIR resource for the patient being registered as the patient may not be yet recorded in the EHR (and thus not available from the FHIR server) and CDS Services using this hook would predominantly be interested in the details of the patient being registered.</p>
+<p>Additionally, consider a PGX CDS Service and a Zika screening CDS Service, each of which is subscribed to the same hook. The context data specified by their shared hook should contain data relevant to both CDS Services; however, each service will have other specific data needs that will necessitate disparate prefetch requests. For instance, the PGX CDS Service likely is interested in genomics data whereas the Zika screening CDS Service will want Observations.</p>
+<p>In summary, context is data specific to a hook and universally relevant to all CDS Services subscribed to said hook. Prefetch data is unique to individual CDS Services and supplements the data from context.</p>
+<h3 id="prefetch-tokens">Prefetch tokens<a class="headerlink" href="#prefetch-tokens" title="Permanent link">&para;</a></h3>
+<p>Often a prefetch template builds on the contextual data associated with the hook. For example, a particular CDS Service might recommend guidance based on a patient's conditions when the chart is opened. The FHIR query to retrieve these conditions might be <code>Condition?patient=123</code>. In order to express this as a prefetch template, the CDS Service must express the FHIR identifier of the patient as a token so that the EHR can replace the token with the appropriate value. When context fields are used as tokens, their token name MUST be <code>context.name-of-the-field</code>. For example, given a context like:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot;context&quot;</span> <span class="err">:</span> <span class="p">{</span>
+  <span class="nt">&quot;patientId&quot;</span><span class="p">:</span> <span class="s2">&quot;123&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p>The token name would be <code>{{context.patientId}}</code>. Again using our above conditions example, the complete prefetch template would be <code>Condition?patient={{context.patientId}}</code>.</p>
+<p>Only the first level fields in context may be considered for tokens. Hook creators MUST document which fields in the context are supported as tokens. If a context field can be tokenized, the value of the context field MUST be a data type that can placed into a FHIR query (eg, string, number, etc).</p>
+<p>For example, given the following context that contains amongst other things, a Patient FHIR resource:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot;context&quot;</span> <span class="err">:</span> <span class="p">{</span>
+  <span class="nt">&quot;encounterId&quot;</span><span class="p">:</span> <span class="s2">&quot;456&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;patient&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;Patient&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;123&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;use&quot;</span><span class="p">:</span> <span class="s2">&quot;official&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;family&quot;</span><span class="p">:</span> <span class="s2">&quot;Watts&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;given&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">&quot;Wade&quot;</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;male&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;birthDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2024-08-12&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p>Only the <code>encounterId</code> field in this example is eligible to be a prefetch token as it is a first level field and the datatype (string) can be placed into the FHIR query. The Patient.id value in the context is not eligible to be a prefetch token because it is not a first level field. If the hook creator intends for the Patient.id value to be available as a prefetch token, it must be made available as a first level field. Using the aforementioned example, we simply add a new <code>patientId</code> field:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot;context&quot;</span> <span class="err">:</span> <span class="p">{</span>
+  <span class="nt">&quot;patientId&quot;</span><span class="p">:</span> <span class="s2">&quot;123&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;encounterId&quot;</span><span class="p">:</span> <span class="s2">&quot;456&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;patient&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;resourceType&quot;</span><span class="p">:</span> <span class="s2">&quot;Patient&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;123&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;use&quot;</span><span class="p">:</span> <span class="s2">&quot;official&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;family&quot;</span><span class="p">:</span> <span class="s2">&quot;Watts&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;given&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">&quot;Wade&quot;</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;male&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;birthDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2024-08-12&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="hook-definition-format">Hook Definition Format<a class="headerlink" href="#hook-definition-format" title="Permanent link">&para;</a></h2>
+<p>Hooks are defined in the following format.</p>
+<h3 id="hook-name-expressed-as-noun-verb"><code>hook-name-expressed-as-noun-verb</code><a class="headerlink" href="#hook-name-expressed-as-noun-verb" title="Permanent link">&para;</a></h3>
+<p>The name of the hook SHOULD succinctly and clearly describe the activity or event. Hook names are unique so hook creators SHOULD take care to ensure newly proposed hooks do not conflict with an existing hook name. Hook creators MAY choose to name their hook with a URI (e.g. <code>https://example.org/hooks/patient-transmogrify</code>) if the hook is specific to an organization.</p>
+<p>When naming hooks, the name should start with the subject (noun) of the hook and be followed by the activity (verb). For example, <code>patient-view</code> (not <code>view-patient</code>) or <code>medication-prescribe</code> (not <code>prescribe-medication</code>).</p>
+<h3 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h3>
+<p>Describe when this hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementors.</p>
+<h3 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h3>
+<p>Describe the set of contextual data used by this hook. Only data logically and necessarily associated with the purpose of this hook should be represented in context.</p>
+<p>All fields defined by the hook's context MUST be defined in a table where each field is described by the following attributes:</p>
+<ul>
+<li>Field: The name of the field in the context JSON object.</li>
+<li>Optionality: A string value of either <code>REQUIRED</code> or <code>OPTIONAL</code></li>
+<li>Prefetch Token: A string value of either <code>Yes</code> or <code>No</code>, indicating whether this field can be tokenized in a prefetch template.</li>
+<li>Type: The type of the field in the context JSON object, expressed as the JSON type, or the name of a FHIR Resource type. Valid types are <em>boolean</em>, <em>string</em>, <em>number</em>, <em>object</em>, <em>array</em>, or the name of a FHIR resource type. When a field can be of multiple types, type names MUST be separated by a <em>pipe</em> (<code>|</code>)</li>
+<li>Description: A functional description of the context value. If this value can change according to the FHIR version in use, the description SHOULD describe the value for each supported FHIR version.</li>
+</ul>
+<h3 id="fhir-resources-in-context">FHIR resources in context<a class="headerlink" href="#fhir-resources-in-context" title="Permanent link">&para;</a></h3>
+<p>When potentially multiple FHIR resources value a single context field, these resources SHOULD be formatted as a FHIR Bundle. For example, multiple FHIR resources are necessary to describe all of the orders under review in the <code>order-review</code> hook's <code>orders</code> field. Hook definitions SHOULD prefer the use of FHIR Bundles over other bespoke data structures.</p>
+<p>Often, context is populated with in-progress or in-memory data that may not yet be available from the FHIR server. For example, <code>medication-prescribe</code> and <code>order-review</code> define context fields containing FHIR resources that represent draft resources. In this case,  the EHR should only provide these draft resources and not the full set of orders available from its FHIR server. The CDS service MAY pre-fetch or query for FHIR resources with other statuses.</p>
+<p>All FHIR resources in context MUST be based on the same FHIR version.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Optionality</th>
+<th>Prefetch Token</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>someField</code></td>
+<td>REQUIRED</td>
+<td>Yes</td>
+<td><em>string</em></td>
+<td>A clear description of the value of this field.</td>
+</tr>
+<tr>
+<td><code>anotherField</code></td>
+<td>OPTIONAL</td>
+<td>No</td>
+<td><em>number</em></td>
+<td>A clear description of the value of this field.</td>
+</tr>
+<tr>
+<td><code>someObject</code></td>
+<td>REQUIRED</td>
+<td>No</td>
+<td><em>object</em></td>
+<td>A clear description of the value of this field.</td>
+</tr>
+<tr>
+<td><code>moreObjects</code></td>
+<td>OPTIONAL</td>
+<td>No</td>
+<td><em>array</em></td>
+<td>A clear description of the items in this array.</td>
+</tr>
+<tr>
+<td><code>allFHIR</code></td>
+<td>OPTIONAL</td>
+<td>No</td>
+<td><em>object</em></td>
+<td>A FHIR Bundle of the following FHIR resources using a specific version of FHIR.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<p>Hook creators SHOULD include examples of the context.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot;context&quot;</span><span class="err">:</span><span class="p">{</span>
+  <span class="nt">&quot;someField&quot;</span><span class="p">:</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;anotherField&quot;</span><span class="p">:</span><span class="mi">123</span><span class="p">,</span>
+  <span class="nt">&quot;someObject&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;moreObjects&quot;</span><span class="p">:[]</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p>If the context contains FHIR data, hook creators SHOULD include examples across multiple versions of FHIR if differences across FHIR versions are possible.</p>
+<h2 id="changes-to-the-definition-of-a-hook-hook-versioning">Changes to the Definition of a Hook (Hook Versioning)<a class="headerlink" href="#changes-to-the-definition-of-a-hook-hook-versioning" title="Permanent link">&para;</a></h2>
+<p>Each hook MUST include a Metadata table at the beginning of the hook with the specification version and hook version as described in the following sections.</p>
+<h3 id="specification-version">Specification Version<a class="headerlink" href="#specification-version" title="Permanent link">&para;</a></h3>
+<p>Because hooks are such an integral part of the CDS Hooks specification, hook definitions are associated with specific versions of the specification. The hook definition MUST include the version (or versions) of the CDS Hooks specification that it is defined to work with.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>specificationVersion | 1.0
+</pre></div>
+</td></tr></table>
+
+<p>Because the specification itself follows semantic versioning, the version specified here is a minimum specification version. In other words, a hook defined to work against 1.0 should continue to work against the 1.1 version of CDS Hooks. However, a hook that specifies 1.1 would not be expected to work in a CDS Hooks 1.0 environment.</p>
+<h3 id="hook-version">Hook Version<a class="headerlink" href="#hook-version" title="Permanent link">&para;</a></h3>
+<p>To enable tracking of changes to hook definitions, each hook MUST include a version indicator, expressed as a string.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>hookVersion | 1.0
+</pre></div>
+</td></tr></table>
+
+<p>To help ensure the stability of CDS Hooks implementations, once a hook has been defined (i.e. published with a particular name so that it is available for implementation), breaking changes MUST NOT be made. This means that fields can be added and restrictions relaxed, but fields cannot be changed, and restrictions cannot be tightened.</p>
+<p>In particular, the semantics of a hook (i.e. the meaning of the hook from the perspective of the EHR) cannot be changed. EHRs that implement specific hooks are responsible for ensuring the hook is called from the appropriate point in the workflow.</p>
+<p>Note that this means that the name of the hook carries major version semantics. That is not to say that the name must include the major version, that is left as a choice by users of the specification. Clean hook names increase usability. Ideally, an active hook name accurately defines the meaning and workflow of the hook in actual words.</p>
+<p>The following types of changes are possible for a hook definition:</p>
+<table>
+<thead>
+<tr>
+<th>Change</th>
+<th>Version Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clarifications and corrections to documentation that do not impact functionality</td>
+<td>Patch</td>
+</tr>
+<tr>
+<td>Change of prefetch token status of an existing context field</td>
+<td>Patch</td>
+</tr>
+<tr>
+<td>Addition of a new field to the context</td>
+<td>Minor</td>
+</tr>
+<tr>
+<td>Change of optionality of an existing context field</td>
+<td>Major</td>
+</tr>
+<tr>
+<td>Change of type or cardinality of an existing context field</td>
+<td>Major</td>
+</tr>
+<tr>
+<td>Removal of an existing context field</td>
+<td>Major</td>
+</tr>
+<tr>
+<td>Change of semantics of an existing context field</td>
+<td>Major</td>
+</tr>
+<tr>
+<td>Change of semantics of the hook</td>
+<td>Major</td>
+</tr>
+</tbody>
+</table>
+<p>When a major change is made, the hook definition MUST be published under a new name. When a minor or patch change is made, the hook version MUST be updated. Hook definers MUST use <a href="https://semver.org/">semantic versioning</a> to communicate the impact of changes in an industry standard way.</p>
+<h3 id="change-log">Change Log<a class="headerlink" href="#change-log" title="Permanent link">&para;</a></h3>
+<p>Changes made to a hook MUST be documented in a change log to ensure hook consumers can track what has been changed over the life of a hook. The change log MUST contain the following elements:</p>
+<ul>
+<li>Version: The version of the change</li>
+<li>Description: A description of the change and its impact</li>
+</ul>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1</td>
+<td>Added new context variable</td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>Clarified context variable usage</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>Initial Release</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../specification/1.0/" title="1.0" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                1.0
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="template/" title="new-hook-template" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                new-hook-template
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © 2018 HL7 & Boston Children's Hospital.<p /> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/cds-hooks" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.267712eb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
