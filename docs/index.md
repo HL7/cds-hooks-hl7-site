@@ -17,7 +17,7 @@ The CDS Hooks specification is licensed under a Creative Commons Attribution 4.0
 
 | Version                    | Date       | Description |
 | -------------------------- | ---------- | ----------- |
-| [1.0](1.0/)                | 2019-02-?? | 1.0 STU release (current) |
+| [1.0](1.0/)                | 2019-04-23 | 1.0 STU release (current) |
 | [2018May](ballots/2018May) | 2018-03-30 | 1.0 ballot (May 2018) |
 
 **Change Log**
