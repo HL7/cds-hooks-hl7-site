@@ -1,1 +1,1 @@
-web: mkdocs build && cd site && python -m SimpleHTTPServer $PORT
+web: bash retrieve-canonical-content.sh && mkdocs build && cd site && python -m SimpleHTTPServer $PORT

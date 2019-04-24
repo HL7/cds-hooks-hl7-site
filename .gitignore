@@ -6,3 +6,9 @@ env/
 
 # mkdocs
 site/
+
+# ballots/2018May is intentionally not ignored for historical reasons.
+# All future ballots will be ignored as below.
+
+# Canonical released content that is copied in at build time
+1.0/

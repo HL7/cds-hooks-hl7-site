@@ -3,6 +3,7 @@ language: python
 python:
   - "2.7"
 script:
+  - ./retrieve-canonical-content.sh
   - mkdocs build --verbose --clean --strict
 deploy:
   provider: pages
