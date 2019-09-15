@@ -11,6 +11,8 @@ Releases of the specifcation have been formally published through HL7.
 
 Ballot versions are the precursors to a released version and go through a period of community feedback. They are archived here for historical posterity.
 
+Hooks that have reached maturity level 4 or above (as described by the [Hook Maturity Model](1.0/#hook-maturity-model)) are published with the specification here. Proposed hooks (level 3 or below, are found at [https://cds-hooks.org](https://cds-hooks.org))
+
 The CDS Hooks specification is licensed under a Creative Commons Attribution 4.0 International License. All source code for CDS Hooks is available at [https://github.com/cds-hooks](https://github.com/cds-hooks).
 
 **Version History**
