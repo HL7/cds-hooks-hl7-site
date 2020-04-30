@@ -1,5 +1,20 @@
 # `patient-view`
 
+!!! info "February 2020 STU Ballot"
+    This is the first STU ballot of the `patient-view` hook. This hook was originally included
+    as part of the first CDS Hooks ballot, but reconciliation of that ballot resulted in the
+    CDS Hooks specification defining the structure of a hook definition, but no actual hooks.
+    The [Hook Maturity Model](https://cds-hooks.hl7.org/1.0/#hook-maturity-model) defines the
+    process for proposing new hooks on the [CDS Hooks Repository](https://github.com/cds-hooks/docs) and
+    the [CDS Hooks Community Build Site](https://cds-hooks.org/). Once the hook reaches maturity level
+    4, it is balloted as part of an HL7 STU Ballot. This ballot is the first hook definition to
+    be balloted using this process.
+
+!!! info "Ballot Content"
+    Note carefully that this ballot is all and only this page. None of the rest of the CDS Hooks
+    specification content is being balloted this cycle. Commenters should focus their review on
+    the contents of this page.
+
 | Metadata | Value
 | ---- | ----
 | specificationVersion | 1.0
@@ -41,5 +56,4 @@ Field | Optionality | Prefetch Token | Type | Description
 
 Version | Description
 ---- | ----
-1.0 | Initial Release
-
+1.0 | Initial Release (1st STU Ballot)
