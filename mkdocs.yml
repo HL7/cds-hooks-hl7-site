@@ -17,6 +17,8 @@ nav:
 - Home: 'index.md'
 - Releases:
   - 1.0: '1.0/index.md'
+- Hooks:
+  - 'patient-view 4' : 'hooks/patient-view/2020Feb/patient-view.md'
 - Archived Ballots:
   - Home: 'ballots/index.md'
   - 2018May: 'ballots/2018May/index.html'

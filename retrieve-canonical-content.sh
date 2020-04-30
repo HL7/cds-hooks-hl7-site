@@ -15,4 +15,4 @@
 # 1.0 release
 echo 'Retrieving the 1.0 release...'
 mkdir -p docs/1.0
-curl https://raw.githubusercontent.com/cds-hooks/docs/master/docs/specification/1.0.md > docs/1.0/index.md
+curl https://raw.githubusercontent.com/cds-hooks/docs/master/docs/specification/current.md > docs/1.0/index.md
