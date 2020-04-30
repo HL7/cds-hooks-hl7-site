@@ -19,6 +19,11 @@ nav:
   - 1.0: '1.0/index.md'
 - Hooks:
   - 'patient-view 4' : 'hooks/patient-view/2020Feb/patient-view.md'
+  - 'appointment-book 1' : 'hooks/appointment-book/2020May/appointment-book.md'
+  - 'encounter-discharge 1' : 'hooks/encounter-discharge/2020May/encounter-discharge.md'
+  - 'encounter-start 1' : 'hooks/encounter-start/2020May/encounter-start.md'
+  - 'order-select 1' : 'hooks/order-select/2020May/order-select.md'
+  - 'order-sign 1' : 'hooks/order-sign/2020May/order-sign.md'
 - Archived Ballots:
   - Home: 'ballots/index.md'
   - 2018May: 'ballots/2018May/index.html'
