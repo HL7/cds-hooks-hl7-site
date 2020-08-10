@@ -19,10 +19,23 @@ The CDS Hooks specification is licensed under a Creative Commons Attribution 4.0
 
 | Version                    | Date       | Description |
 | -------------------------- | ---------- | ----------- |
+| [1.1](ballots/2020Sep)     | 2020-07-28 | 1.1 STU 2 Ballot (September 2020) |
 | [1.0](1.0/)                | 2019-04-23 | 1.0 STU release (current) |
 | [2018May](ballots/2018May) | 2018-03-30 | 1.0 ballot (May 2018) |
 
 **Change Log**
+
+**2020Sep Ballot**
+
+Changes introduced in the STU2 Ballot (v1.1):
+
+* System actions
+* Feedback support and override reasons
+* Add isRecommended and topic elements
+* Permit UserId Practitioner Role
+* Add Coding type to simplify usage from object-oriented languages
+
+In addition, numerous clarifications, corrections, and non-substantive updates were made based on continued implementer feedback during the trial-use period. For a complete list of changes applied, see the repository commit log.
 
 **1.0 Release**
 

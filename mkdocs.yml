@@ -24,9 +24,10 @@ nav:
   - 'encounter-start 1' : 'hooks/encounter-start/2020May/encounter-start.md'
   - 'order-select 1' : 'hooks/order-select/2020May/order-select.md'
   - 'order-sign 1' : 'hooks/order-sign/2020May/order-sign.md'
-- Archived Ballots:
+- Ballots:
   - Home: 'ballots/index.md'
   - 2018May: 'ballots/2018May/index.html'
+  - 2020Sep: 'ballots/2020Sep/index.md'
 
 repo_url: 'https://github.com/hl7/cds-hooks-hl7-site'
 
