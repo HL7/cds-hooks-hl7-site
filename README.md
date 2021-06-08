@@ -28,7 +28,6 @@ $ pip install -r requirements.txt
 3. Run the site locally
 
 ```sh
-$ ./retrieve-canonical-content.sh
 $ mkdocs serve
 ```
 
@@ -38,7 +37,7 @@ Anytime you make a change to the content within the site, your browser should au
 
 ## Publishing
 
-This repository supports the publication and management of the HL7 CDS Hooks site, sourced from the content in the cds-hooks community site. The retrieve-canonical-content script copies the latest content from the cds-hooks community repository to this repository for publication.
+This repository supports the publication and management of the HL7 CDS Hooks site, sourced from the content in the cds-hooks community site.
 
 ## Adding Release or Ballot Content
 
