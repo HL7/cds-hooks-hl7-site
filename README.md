@@ -15,13 +15,13 @@ This repository is built using the [MkDocs](http://www.mkdocs.org/) static site 
 1. Clone the repository
 
 ```sh
-$ git clone https://github.com/cds-hooks/hl7-site
+$ git clone https://github.com/HL7/cds-hooks-hl7-site
 ```
 
 2. Install the project dependencies
 
 ```sh
-$ cd hl7-site
+$ cd cds-hooks-hl7-site
 $ pip install -r requirements.txt
 ```
 
@@ -36,21 +36,26 @@ $ mkdocs serve
 
 Anytime you make a change to the content within the site, your browser should automatically refresh to show your changes in real-time.
 
-## Contributing
+## Publishing
 
-We encourage and welcome any contributions to this project.
-
-If you want to report an issue or enhancement, please make sure to browse our [existing issues](https://github.com/cds-hooks/hl7-site/issues) before logging new issues.
-
-In support of a healthy and inclusive community, we use and enforce a [code of conduct](./CODE_OF_CONDUCT.md) for all members of our community. Our code of conduct is adapted from the [Contributor Covenant](http://contributor-covenant.org/).
+This repository supports the publication and management of the HL7 CDS Hooks site, sourced from the content in the cds-hooks community site. The retrieve-canonical-content script copies the latest content from the cds-hooks community repository to this repository for publication.
 
 ## Adding Release or Ballot Content
 
-1. Update the `.gitignore` file to include the new release/ballot directory
-2. Update the `retrieve-canonical-content.sh` file to retrieve the new release/ballot
+1. Create the new release/ballot directory
+2. Copy the release/ballot content from the canonical source: https://raw.githubusercontent.com/cds-hooks/docs/master/docs/specification/current.md
 3. Update the `mkdocs.yml` file to include the new release/ballot directory in the `nav:` section
 4. Update the `docs\index.md` file to include information on the release
 5. If this is a ballot addition, update the `docs\ballots\index.md` file to include information on the ballot
+
+## Adding Hook Definition Content
+
+Hooks are built and published as separate specifications to support the evolution of hooks independent of the evolution of the CDS Hooks specification. Hooks are published in folders underneath the `hooks` directory, with folder names corresponding to the name of the hook, and sub-folders for balloted and released content. To add or update a hook:
+
+1. Create the new hook release/ballot directory (e.g. `hooks\patient-view`)
+2. Copy the new hook release/ballot content from the canonical source: (e.g. https://raw.githubusercontent.com/cds-hooks/docs/master/docs/hooks/patient-view.md)
+3. Update the `mkdocs.yml` file to include the new hook release/ballot directory in the `Hooks:` section of the `nav:` block
+4. Add a `history\history.md` file to the hook folder, or update it if it is already present
 
 ## License
 

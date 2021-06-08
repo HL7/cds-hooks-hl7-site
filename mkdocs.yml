@@ -18,7 +18,10 @@ nav:
 - Releases:
   - 1.0: '1.0/index.md'
 - Hooks:
-  - 'patient-view 4' : 'hooks/patient-view/2020Feb/patient-view.md'
+  - 'patient_view 5':
+    - 'patient-view (STU1 release)' : 'hooks/patient-view/STU1/patient-view.md'
+    - 'patient-view (STU1 ballot)' : 'hooks/patient-view/2020Feb/patient-view.md'
+    - 'patient-view (current build)' : 'https://cds-hooks.org/hooks/patient-view/'
   - 'appointment-book 1' : 'hooks/appointment-book/2020May/appointment-book.md'
   - 'encounter-discharge 1' : 'hooks/encounter-discharge/2020May/encounter-discharge.md'
   - 'encounter-start 1' : 'hooks/encounter-start/2020May/encounter-start.md'
@@ -30,6 +33,7 @@ nav:
   - 2020Sep: 'ballots/2020Sep/index.md'
 
 repo_url: 'https://github.com/hl7/cds-hooks-hl7-site'
+edit_uri: ''
 
 markdown_extensions:
   - admonition
