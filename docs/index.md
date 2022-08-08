@@ -19,26 +19,11 @@ The CDS Hooks specification is licensed under a Creative Commons Attribution 4.0
 
 | Version                    | Date       | Description |
 | -------------------------- | ---------- | ----------- |
-| [2.0](2.0/)                | 2022-08-23 | 2.0 STU 2 release (current) |
 | [1.1](ballots/2020Sep)     | 2020-07-28 | 1.1 STU 2 Ballot (September 2020) |
-| [1.0](1.0/)                | 2019-04-23 | 1.0 STU release |
+| [1.0](1.0/)                | 2019-04-23 | 1.0 STU release (current) |
 | [2018May](ballots/2018May) | 2018-03-30 | 1.0 ballot (May 2018) |
 
-
 **Change Log**
-
-**2.0 Release**
-Changes since the 1.0 STU 1 Version:
-
-* [#505](https://github.com/cds-hooks/docs/pull/505): Add optional `card.source.topic` to allow CDS Service to identify a high-level category
-* [#513](https://github.com/cds-hooks/docs/pull/513): CDS Service can suggest `override reasons` for user's to explain why guidance isn't taken
-* [#519](https://github.com/cds-hooks/docs/wiki/Feedback-endpoint-for-CDS-Hooks-1.1): CDS Client provides feedback to Service following user interaction (fka analytics endpoint)
-* [FHIR-28663](https://jira.hl7.org/browse/FHIR-28663): Permit pagination in prefetch
-* [FHIR-34274](https://jira.hl7.org/browse/FHIR-34274): Clarify how OperationOutcome should be used in `prefetch` 
-* [FHIR-28655](https://jira.hl7.org/browse/FHIR-28655): Production FHIR servers are required to use https
-
-In addition, numerous clarifications, corrections, and non-substantive updates were made to the specification based on ballot and implementer feedback. For a complete list of changes applied, see the issues under the [HL7 Jira's 2020-Sep CDS Hooks ballot](https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22CDS%20Hooks%20(FHIR)%20%5BFHIR-cds-hooks%5D%22%20AND%20issueFunction%20in%20inBallot(2020-Sep)%20ORDER%20BY%20issue) or the repository commit log.
-
 
 **2020Sep Ballot**
 

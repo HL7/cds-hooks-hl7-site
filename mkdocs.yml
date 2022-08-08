@@ -17,7 +17,6 @@ nav:
 - Home: 'index.md'
 - Releases:
   - 1.0: '1.0/index.md'
-  - 2.0: '2.0/index.md'
 - Hooks:
   - 'patient_view 5':
     - 'patient-view (STU1 release)' : 'hooks/patient-view/STU1/patient-view.md'
