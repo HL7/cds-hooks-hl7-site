@@ -1,7 +1,7 @@
 ![CDS Hooks Overview](../images/logo.png)
 
 !!! info "1.0 Release"
-    This is the current published release of the CDS Hooks specification. All stable releases are available at [https://cds-hooks.hl7.org](https://cds-hooks.hl7.org).
+    This is the previous published release of the CDS Hooks specification. All stable releases are available at [https://cds-hooks.hl7.org](https://cds-hooks.hl7.org). The current published release is available here: https://cds-hooks.hl7.org/2.0/.
 
 ## Overview
 
