@@ -110,6 +110,14 @@ Hooks are built and published as separate specifications to support the evolutio
 3. Update the `mkdocs.yml` file to include the new hook release/ballot directory in the `Hooks:` section of the `nav:` block
 4. Add a `history\history.md` file to the hook folder, or update it if it is already present
 
+## Building the Site
+
+Run the mkdocs build command to build the site:
+
+    mkdocs build
+    
+This will place the output in the `\site` folder on your local directory. The site will include everything, the landing pages, the index, the specifications (all versions) and the hook definitions, so it can be a complete replace of the published content.
+
 ## License
 
 All Markdown content in this repository is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
