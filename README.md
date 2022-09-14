@@ -118,6 +118,10 @@ Run the mkdocs build command to build the site:
     
 This will place the output in the `\site` folder on your local directory. The site will include everything, the landing pages, the index, the specifications (all versions) and the hook definitions, so it can be a complete replace of the published content.
 
+## Publishing
+
+Since the publication is a complete replace, it would be good to archive the current contents of the site prior to any publication step. Take a zip of the entire contents of the published site and commit that to the `archives` folder in this repository.
+
 ## License
 
 All Markdown content in this repository is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
