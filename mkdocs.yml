@@ -29,7 +29,7 @@ nav:
     - 'order-sign (current build)' : 'https://cds-hooks.org/hooks/order-sign/'
   - 'order-select 4' : 
     - 'order-select (STU1 ballot)' : 'hooks/order-select/2023SeptSTU1Ballot/order-select.md'
-     - 'order-select (current build)' : 'https://cds-hooks.org/hooks/order-select/'
+    - 'order-select (current build)' : 'https://cds-hooks.org/hooks/order-select/'
   - 'appointment-book 1' : 'hooks/appointment-book/2020May/appointment-book.md'
   - 'encounter-discharge 1' : 'hooks/encounter-discharge/2020May/encounter-discharge.md'
   - 'encounter-start 1' : 'hooks/encounter-start/2020May/encounter-start.md'

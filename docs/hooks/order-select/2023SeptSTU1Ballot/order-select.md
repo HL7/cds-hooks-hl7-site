@@ -1,16 +1,15 @@
 # `order-select`
 
 !!! info "Sept 2023 STU1 Ballot"
-    This is a balloted version of this hook definition. The [Hook Maturity Model](https://cds-hooks.hl7.org/1.0/#hook-maturity-model)
-    defines the process for proposing new hooks on the [CDS Hooks Repository](https://github.com/cds-hooks/docs) and the [CDS Hooks Community Build Site](https://cds-hooks.org/).
+	This page defines a workflow [hook](../../specification/current/#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a **ballot** at the level of **[Trial Use](http://hl7.org/fhir/versions.html#std-processs)**.
 
 | Metadata | Value
 | ---- | ----
 | specificationVersion | 1.0
 | hookVersion | 1.0
 | Hook maturity | [4 - Documented](../../specification/current/#hook-maturity-model)
-| standardsStatus | ballot
-| publicationStatus | snapshot
+| standardsStatus | Trial Use
+| publicationStatus | Ballot
 
 ## Workflow
 
