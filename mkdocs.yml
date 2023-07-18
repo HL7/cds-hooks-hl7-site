@@ -43,6 +43,7 @@ nav:
   - Home: 'ballots/index.md'
   - 2018May: 'ballots/2018May/index.html'
   - 2020Sep: 'ballots/2020Sep/index.md'
+  - 2023Sep: 'ballots/2023Sept/index.md'
 
 repo_url: 'https://github.com/hl7/cds-hooks-hl7-site'
 edit_uri: ''
