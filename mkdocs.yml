@@ -20,18 +20,30 @@ nav:
   - 2.0: '2.0/index.md'
 - Hooks:
   - 'patient_view 5':
+    - 'patient-view (Normative ballot)' : 'hooks/patient-view/2023SeptNormativeBallot/patient-view.md'
     - 'patient-view (STU1 release)' : 'hooks/patient-view/STU1/patient-view.md'
     - 'patient-view (STU1 ballot)' : 'hooks/patient-view/2020Feb/patient-view.md'
     - 'patient-view (current build)' : 'https://cds-hooks.org/hooks/patient-view/'
-  - 'appointment-book 1' : 'hooks/appointment-book/2020May/appointment-book.md'
-  - 'encounter-discharge 1' : 'hooks/encounter-discharge/2020May/encounter-discharge.md'
-  - 'encounter-start 1' : 'hooks/encounter-start/2020May/encounter-start.md'
-  - 'order-select 1' : 'hooks/order-select/2020May/order-select.md'
-  - 'order-sign 1' : 'hooks/order-sign/2020May/order-sign.md'
+  - 'order-sign 5' : 
+    - 'order-sign (STU1)' : 'hooks/order-sign/2023SeptSTU1Ballot/order-sign.md'
+    - 'order-sign (current build)' : 'https://cds-hooks.org/hooks/order-sign/'
+  - 'order-select 4' : 
+    - 'order-select (STU1 ballot)' : 'hooks/order-select/2023SeptSTU1Ballot/order-select.md'
+    - 'order-select (current build)' : 'https://cds-hooks.org/hooks/order-select/'
+  - 'appointment-book 3' :
+    - 'appointment-book (STU1)' : 'hooks/appointment-book/2023SeptSTU1Ballot/appointment-book.md'
+    - 'appointment-book (current build)' : 'https://cds-hooks.org/hooks/appointment-book/'
+  - 'encounter-discharge 3' : 
+    - 'encounter-discharge (STU1)' : 'hooks/encounter-discharge/2023SeptSTU1Ballot/encounter-discharge.md'
+    - 'encounter-discharge (current build)' : 'https://cds-hooks.org/hooks/encounter-discharge/'
+  - 'encounter-start 1' : 
+    - 'encounter-start (STU1)' : 'hooks/encounter-start/2023SeptSTU1Ballot/encounter-start.md'
+    - 'encounter-start (current build)' : 'https://cds-hooks.org/hooks/encounter-start/'
 - Ballots:
   - Home: 'ballots/index.md'
   - 2018May: 'ballots/2018May/index.html'
   - 2020Sep: 'ballots/2020Sep/index.md'
+  - 2023Sep: 'ballots/2023Sept/index.md'
 
 repo_url: 'https://github.com/hl7/cds-hooks-hl7-site'
 edit_uri: ''

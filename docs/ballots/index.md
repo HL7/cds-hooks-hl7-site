@@ -1,19 +1,37 @@
 # Ballots
 
+### September 2023 Hook Maturity Ballot
+
+!!! info
+	For this ballot, only the hooks are under revision. Feedback is specifically solicited on the proposed maturities of the CDS Hooks hooks, per the [CDS Hooks Maturity Model](http://cds-hooks.hl7.org/2.0/#hook-maturity-model). 
+
+
+The September 2023 ballot period is open from August 4th, 2023 through September 4th, 2023. The September 2023 ballot includes the library of CDS Hooks, most of which have never before been balloted. Specifically:
+
+* [`patient-view` ballot at Normative](/hooks/patient-view/2023SeptNormativeBallot/patient-view/)
+* [`order-sign` ballot at Trial Use](/hooks/order-sign/2023SeptSTU1Ballot/order-sign/)
+* [`order-select` ballot at Trial Use](/hooks/order-select/2023SeptSTU1Ballot/order-select/)
+* [`appointment-book` ballot at Trial Use](/hooks/appointment-book/2023SeptSTU1Ballot/appointment-book/)
+* [`encounter-discharge` ballot at Trial Use](/hooks/encounter-discharge/2023SeptSTU1Ballot/encounter-discharge/)
+* [`encounter-start` ballot at Trial Use](/hooks/encounter-start/2023SeptSTU1Ballot/encounter-start/)
+
+Ballot comments can be submitted per normal HL7 processes. Submitters are encouraged to submit using the HL7 Jira issue tracker, setting the Specification of submitted issues to CDS Hooks.
+
+
 ### September 2020 Ballot
 
-The September 2020 ballot period is open from August 14th, 2020 through September 14th, 2020. You can review the content for the September 2020 ballot at [https://cds-hooks.hl7.org/ballots/2020Sep](2020Sep)
+The September 2020 ballot period is open from August 14th, 2020 through September 14th, 2020. You can review the content for the September 2020 ballot at [2020Sep](https://cds-hooks.hl7.org/ballots/2020Sep)
 
 Ballot comments can be submitted per normal HL7 processes. Submitters are encouraged to submit using the HL7 Jira issue tracker, setting the Specification of submitted issues to CDS Hooks.
 
 ### May 2018 Ballot
 
-The May 2018 ballot period is open from April 6th, 2018 thru May 7th, 2018. You can review the content for the May 2018 ballot at [https://cds-hooks.hl7.org/ballots/2018May](2018May)
+The May 2018 ballot period is open from April 6th, 2018 thru May 7th, 2018. You can review the content for the May 2018 ballot at [2018May](https://cds-hooks.hl7.org/ballots/2018May)
 
 The following pages are normative track content:
 
-- [https://cds-hooks.hl7.org/ballots/2018May/specification/1.0/](2018May/specification/1.0/)
-- [https://cds-hooks.hl7.org/ballots/2018May/hooks/](2018May/hooks/)
+- [2018May/specification/1.0/](https://cds-hooks.hl7.org/ballots/2018May/specification/1.0/)
+- [2018May/hooks/](https://cds-hooks.hl7.org/ballots/2018May/hooks/)
 
 Other pages (such as the Overview, Examples, and Quick Start) are informative content intended to provide supplemental documentation.
 
@@ -21,10 +39,4 @@ Other pages (such as the Overview, Examples, and Quick Start) are informative co
 
 Ballot comments can be submitted per normal HL7 processes.
 
-Additionally, we encourage you to submit each distinct comment as a GitHub issue logged to our source repository at [cds-hooks/docs](https://github.com/cds-hooks/docs/issues). If you can, please attach the [ballot](https://github.com/cds-hooks/docs/labels/ballot) label to your issue (see [GitHub's documentation on attaching labels](https://help.github.com/articles/applying-labels-to-issues-and-pull-requests/)). Please make sure to browse our [existing issues](https://github.com/cds-hooks/docs/issues) before logging new issues.
 
-If you don't have a GitHub account or don't want to submit your comment as a GitHub issue, that's fine! We'll do it for you once we receive your comments. :-)
-
-## Following Ballot Discussion
-
-All discussion and resolution of ballot comments will be communicated in an open manner via our GitHub issues, in addition to the process required by HL7. Any discussions that occur in an offline forum (HL7 working group meetings, conference calls, etc), will be communicated on our [mailing list](https://groups.google.com/forum/#!forum/cds-hooks) and [Zulip chat #cds-hooks](https://chat.fhir.org/#narrow/stream/cds-hooks)  stream. Summaries of these offline discussions will be posted on each GitHub issue.
