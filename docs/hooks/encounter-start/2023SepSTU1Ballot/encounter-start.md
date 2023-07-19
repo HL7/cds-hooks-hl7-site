@@ -1,6 +1,6 @@
 # `encounter-start`
 
-!!! info "Sept 2023 STU1 Ballot"
+!!! info "Sep 2023 STU1 Ballot"
 	This page defines a workflow [hook](../../specification/current/#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a **ballot** at the level of **[Trial Use](http://hl7.org/fhir/versions.html#std-processs)**.
 
 | Metadata | Value
