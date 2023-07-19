@@ -1,6 +1,6 @@
 # `patient-view`
 
-!!! info "Sept 2023 Normative Ballot"
+!!! info "Sep 2023 Normative Ballot"
     This page defines a workflow [hook](../../specification/current/#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a **ballot** at the level of **[Normative](http://hl7.org/fhir/versions.html#std-processs)**.
 
 | Metadata | Value

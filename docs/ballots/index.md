@@ -8,12 +8,12 @@
 
 The September 2023 ballot period is open from August 4th, 2023 through September 4th, 2023. The September 2023 ballot includes the library of CDS Hooks, most of which have never before been balloted. Specifically:
 
-* [`patient-view` ballot at Normative](/hooks/patient-view/2023SeptNormativeBallot/patient-view/)
-* [`order-sign` ballot at Trial Use](/hooks/order-sign/2023SeptSTU1Ballot/order-sign/)
-* [`order-select` ballot at Trial Use](/hooks/order-select/2023SeptSTU1Ballot/order-select/)
-* [`appointment-book` ballot at Trial Use](/hooks/appointment-book/2023SeptSTU1Ballot/appointment-book/)
-* [`encounter-discharge` ballot at Trial Use](/hooks/encounter-discharge/2023SeptSTU1Ballot/encounter-discharge/)
-* [`encounter-start` ballot at Trial Use](/hooks/encounter-start/2023SeptSTU1Ballot/encounter-start/)
+* [`patient-view` ballot at Normative](/hooks/patient-view/2023SepNormativeBallot/patient-view/)
+* [`order-sign` ballot at Trial Use](/hooks/order-sign/2023SepSTU1Ballot/order-sign/)
+* [`order-select` ballot at Trial Use](/hooks/order-select/2023SepSTU1Ballot/order-select/)
+* [`appointment-book` ballot at Trial Use](/hooks/appointment-book/2023SepSTU1Ballot/appointment-book/)
+* [`encounter-discharge` ballot at Trial Use](/hooks/encounter-discharge/2023SepSTU1Ballot/encounter-discharge/)
+* [`encounter-start` ballot at Trial Use](/hooks/encounter-start/2023SepSTU1Ballot/encounter-start/)
 
 Ballot comments can be submitted per normal HL7 processes. Submitters are encouraged to submit using the HL7 Jira issue tracker, setting the Specification of submitted issues to CDS Hooks.
 
