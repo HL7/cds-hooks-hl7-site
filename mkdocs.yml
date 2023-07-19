@@ -36,6 +36,9 @@ nav:
   - 'encounter-discharge 3' : 
     - 'encounter-discharge (STU1)' : 'hooks/encounter-discharge/2023SepSTU1Ballot/encounter-discharge.md'
     - 'encounter-discharge (current build)' : 'https://cds-hooks.org/hooks/encounter-discharge/'
+  - 'order-dispatch 1' : 
+    - 'order-dispatch (STU1)' : 'hooks/order-dispatch/2023SepSTU1Ballot/order-dispatch.md'
+    - 'order-dispatch (current build)' : 'https://cds-hooks.org/hooks/order-dispatch/'
   - 'encounter-start 1' : 
     - 'encounter-start (STU1)' : 'hooks/encounter-start/2023SepSTU1Ballot/encounter-start.md'
     - 'encounter-start (current build)' : 'https://cds-hooks.org/hooks/encounter-start/'
