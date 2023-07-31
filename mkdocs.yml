@@ -20,7 +20,6 @@ nav:
   - 2.0: '2.0/index.md'
 - Hooks:
   - 'patient_view 5':
-    - 'patient-view (Normative ballot)' : 'hooks/patient-view/2023SepNormativeBallot/patient-view.md'
     - 'patient-view (STU1 release)' : 'hooks/patient-view/STU1/patient-view.md'
     - 'patient-view (STU1 ballot)' : 'hooks/patient-view/2020Feb/patient-view.md'
     - 'patient-view (current build)' : 'https://cds-hooks.org/hooks/patient-view/'
