@@ -8,7 +8,7 @@
 
 The September 2023 ballot period is open from August 4th, 2023 through September 4th, 2023. The September 2023 ballot includes the library of CDS Hooks, most of which have never before been balloted. Specifically:
 
-* [`patient-view` ballot at Normative](/hooks/patient-view/2023SepNormativeBallot/patient-view/), previously at maturity level 5 - Mature.
+* [`patient-view` ballot at Trial Use, maturity level 5](/hooks/patient-view/2023SepSTU1Ballot/patient-view/), previously at maturity level 5 - Mature.
 * [`order-sign` initial ballot at Trial Use, maturity level 5](/hooks/order-sign/2023SepSTU1Ballot/order-sign/)
 * [`order-select` intial ballot at Trial Use, maturity level 4](/hooks/order-select/2023SepSTU1Ballot/order-select/)
 * [`appointment-book` intitial ballot at Trial Use, maturity level 3](/hooks/appointment-book/2023SepSTU1Ballot/appointment-book/)
