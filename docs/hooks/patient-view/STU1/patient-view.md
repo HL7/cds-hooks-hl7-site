@@ -8,6 +8,8 @@
 | specificationVersion | 1.0
 | hookVersion | 1.1
 | hookMaturity | [5 - Mature](../../specification/1.0/#hook-maturity-model)
+| standardsStatus | Trial Use
+| publicationStatus | Published
 
 ## Workflow
 

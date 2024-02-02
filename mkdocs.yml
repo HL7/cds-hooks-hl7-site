@@ -24,23 +24,29 @@ nav:
     - 'patient-view (STU1 ballot)' : 'hooks/patient-view/2020Feb/patient-view.md'
     - 'patient-view (current build)' : 'https://cds-hooks.org/hooks/patient-view/'
   - 'order-sign 5' : 
-    - 'order-sign (STU1)' : 'hooks/order-sign/2023SepSTU1Ballot/order-sign.md'
+    - 'order-sign (STU1 release)' : 'hooks/order-sign/STU1/order-sign.md'
+    - 'order-sign (STU1 ballot)' : 'hooks/order-sign/2023SepSTU1Ballot/order-sign.md'
     - 'order-sign (current build)' : 'https://cds-hooks.org/hooks/order-sign/'
   - 'order-select 4' : 
+    - 'order-select (STU1 release)' : 'hooks/order-select/STU1/order-select.md'
     - 'order-select (STU1 ballot)' : 'hooks/order-select/2023SepSTU1Ballot/order-select.md'
     - 'order-select (current build)' : 'https://cds-hooks.org/hooks/order-select/'
-  - 'appointment-book 3' :
-    - 'appointment-book (STU1)' : 'hooks/appointment-book/2023SepSTU1Ballot/appointment-book.md'
-    - 'appointment-book (current build)' : 'https://cds-hooks.org/hooks/appointment-book/'
-  - 'encounter-discharge 3' : 
-    - 'encounter-discharge (STU1)' : 'hooks/encounter-discharge/2023SepSTU1Ballot/encounter-discharge.md'
-    - 'encounter-discharge (current build)' : 'https://cds-hooks.org/hooks/encounter-discharge/'
   - 'order-dispatch 1' : 
-    - 'order-dispatch (STU1)' : 'hooks/order-dispatch/2023SepSTU1Ballot/order-dispatch.md'
+    - 'order-dispatch (STU1 release)' : 'hooks/order-dispatch/STU1/order-dispatch.md'
+    - 'order-dispatch (STU1 ballot)' : 'hooks/order-dispatch/2023SepSTU1Ballot/order-dispatch.md'
     - 'order-dispatch (current build)' : 'https://cds-hooks.org/hooks/order-dispatch/'
   - 'encounter-start 1' : 
-    - 'encounter-start (STU1)' : 'hooks/encounter-start/2023SepSTU1Ballot/encounter-start.md'
+    - 'encounter-start (STU1 release)' : 'hooks/encounter-start/STU1/encounter-start.md'
+    - 'encounter-start (STU1 ballot)' : 'hooks/encounter-start/2023SepSTU1Ballot/encounter-start.md'
     - 'encounter-start (current build)' : 'https://cds-hooks.org/hooks/encounter-start/'
+  - 'encounter-discharge 1' : 
+    - 'encounter-discharge (STU1 release)' : 'hooks/encounter-discharge/STU1/encounter-discharge.md'
+    - 'encounter-discharge (STU1 ballot)' : 'hooks/encounter-discharge/2023SepSTU1Ballot/encounter-discharge.md'
+    - 'encounter-discharge (current build)' : 'https://cds-hooks.org/hooks/encounter-discharge/'
+  - 'appointment-book 1' :
+    - 'appointment-book (STU1 release)' : 'hooks/appointment-book/STU1/appointment-book.md'
+    - 'appointment-book (STU1 ballot)' : 'hooks/appointment-book/2023SepSTU1Ballot/appointment-book.md'
+    - 'appointment-book (current build)' : 'https://cds-hooks.org/hooks/appointment-book/'
 - Ballots:
   - Home: 'ballots/index.md'
   - 2018May: 'ballots/2018May/index.html'
