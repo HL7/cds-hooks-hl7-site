@@ -1,5 +1,5 @@
 backports-abc==0.5
-certifi==2019.3.9
+certifi==2022.12.7
 click==7.0
 Jinja2==2.10.1
 livereload==2.6.0
